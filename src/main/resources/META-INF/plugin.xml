@@ -1,0 +1,66 @@
+<idea-plugin>
+    <id>pl.kamilpek.Capitalize</id>
+    <name>Capitalize</name>
+    <vendor email="kamilpek@gmail.com">Kamil Pek</vendor>
+
+    <description><![CDATA[
+    <p>Capitalize plugin - Capitalize (ctrl + shift + alt + C -> C [capitalize]), lowercase (ctrl + shift + alt + C -> L [lower]),
+    UPPERCASE (ctrl + shift + alt + C -> U [upper]), kebab-case (ctrl + shift + alt + C -> K [kebab]),
+    PascalCase (ctrl + shift + alt + C -> P [pascal]), camelCase (ctrl + shift + alt + C -> H [humps]),
+    snake_case (ctrl + shift + alt + C -> S [snake]), SNAKE_CASE_CAPS (ctrl + shift + alt + C -> A [all caps snake]).</p>
+    ]]></description>
+
+    <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
+
+    <actions>
+        <group id="Capitalize" text="Capitalize">
+            <add-to-group group-id="ToolsMenu" anchor="last"/>
+            <action id="Capitalize.UpperCase" class="actions.UpperCaseAction" text="Upper Case" description="Upper case -> UPPERCASE">
+                <keyboard-shortcut keymap="$default" first-keystroke="control shift alt C" second-keystroke="U" />
+                <keyboard-shortcut keymap="Mac OS X" first-keystroke="control shift alt C" second-keystroke="U" remove="true"/>
+                <keyboard-shortcut keymap="Mac OS X 10.5+" first-keystroke="control shift alt C" second-keystroke="U" replace-all="true"/>
+            </action>
+            <action id="Capitalize.LowerCase" class="actions.LowerCaseAction" text="Lower Case" description="Lower case -> lowercase">
+                <keyboard-shortcut keymap="$default" first-keystroke="control shift alt C" second-keystroke="L" />
+                <keyboard-shortcut keymap="Mac OS X" first-keystroke="control shift alt C" second-keystroke="L" remove="true"/>
+                <keyboard-shortcut keymap="Mac OS X 10.5+" first-keystroke="control shift alt C" second-keystroke="L" replace-all="true"/>
+            </action>
+            <action id="Capitalize.Capitalize" class="actions.CapitalizeAction" text="Capitalize" description="Capitalize sentence -> Capitalize Sentence">
+                <keyboard-shortcut keymap="$default" first-keystroke="control shift alt C" second-keystroke="C" />
+                <keyboard-shortcut keymap="Mac OS X" first-keystroke="control shift alt C" second-keystroke="C" remove="true"/>
+                <keyboard-shortcut keymap="Mac OS X 10.5+" first-keystroke="control shift alt C" second-keystroke="C" replace-all="true"/>
+            </action>
+            <action id="Capitalize.CamelCase" class="actions.CamelCaseAction" text="Camel Case" description="Camel case -> camelCaase">
+                <keyboard-shortcut keymap="$default" first-keystroke="control shift alt C" second-keystroke="H" />
+                <keyboard-shortcut keymap="Mac OS X" first-keystroke="control shift alt C" second-keystroke="H" remove="true"/>
+                <keyboard-shortcut keymap="Mac OS X 10.5+" first-keystroke="control shift alt C" second-keystroke="H" replace-all="true"/>
+            </action>
+            <action id="Capitalize.PascalCase" class="actions.PascalCaseAction" text="Pascal Case" description="Pascal case -> PascalCase">
+                <keyboard-shortcut keymap="$default" first-keystroke="control shift alt C" second-keystroke="P" />
+                <keyboard-shortcut keymap="Mac OS X" first-keystroke="control shift alt C" second-keystroke="P" remove="true"/>
+                <keyboard-shortcut keymap="Mac OS X 10.5+" first-keystroke="control shift alt C" second-keystroke="P" replace-all="true"/>
+            </action>
+            <action id="Capitalize.KebabCase" class="actions.KebabCaseAction" text="Kebab Case" description="Kebab case -> kebab-case">
+                <keyboard-shortcut keymap="$default" first-keystroke="control shift alt C" second-keystroke="K" />
+                <keyboard-shortcut keymap="Mac OS X" first-keystroke="control shift alt C" second-keystroke="K" remove="true"/>
+                <keyboard-shortcut keymap="Mac OS X 10.5+" first-keystroke="control shift alt C" second-keystroke="K" replace-all="true"/>
+            </action>
+            <action id="Capitalize.SnakeCase" class="actions.SnakeCaseAction" text="Snake Case" description="Snake case -> snake-case">
+                <keyboard-shortcut keymap="$default" first-keystroke="control shift alt C" second-keystroke="S" />
+                <keyboard-shortcut keymap="Mac OS X" first-keystroke="control shift alt C" second-keystroke="S" remove="true"/>
+                <keyboard-shortcut keymap="Mac OS X 10.5+" first-keystroke="control shift alt C" second-keystroke="S" replace-all="true"/>
+            </action>
+            <action id="Capitalize.SnakeUpperCase" class="actions.SnakeUpperCaseAction" text="Snake Upper Case" description="Snake upper case -> SNAKE_UPPER_CASE">
+                <keyboard-shortcut keymap="$default" first-keystroke="control shift alt C" second-keystroke="A" />
+                <keyboard-shortcut keymap="Mac OS X" first-keystroke="control shift alt C" second-keystroke="A" remove="true"/>
+                <keyboard-shortcut keymap="Mac OS X 10.5+" first-keystroke="control shift alt C" second-keystroke="A" replace-all="true"/>
+            </action>
+        </group>
+    </actions>
+</idea-plugin>
