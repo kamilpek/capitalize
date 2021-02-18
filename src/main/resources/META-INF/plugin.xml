@@ -4,10 +4,19 @@
     <vendor email="kamilpek@gmail.com">Kamil Pek</vendor>
 
     <description><![CDATA[
-    <p>Capitalize plugin - Capitalize (ctrl + shift + alt + C -> C [capitalize]), lowercase (ctrl + shift + alt + C -> L [lower]),
-    UPPERCASE (ctrl + shift + alt + C -> U [upper]), kebab-case (ctrl + shift + alt + C -> K [kebab]),
-    PascalCase (ctrl + shift + alt + C -> P [pascal]), camelCase (ctrl + shift + alt + C -> H [humps]),
-    snake_case (ctrl + shift + alt + C -> S [snake]), SNAKE_CASE_CAPS (ctrl + shift + alt + C -> A [all caps snake]).</p>
+    <p>Plugin for letter cases modifications.</p>
+	<p>Actions are available in Tools Menu as well as from bellowed hotkeys.</p>
+	<p>To use this tool, mark text and choose your letter case.</p>
+    <ul>
+        <li>Capitalize (ctrl + shift + alt + C -> C [capitalize]),</li>
+        <li>lowercase (ctrl + shift + alt + C -> L [lower]),</li>
+        <li>UPPERCASE (ctrl + shift + alt + C -> U [upper]),</li>
+        <li>kebab-case (ctrl + shift + alt + C -> K [kebab]),</li>
+        <li>PascalCase (ctrl + shift + alt + C -> P [pascal]),</li>
+        <li>camelCase (ctrl + shift + alt + C -> H [humps]),</li>
+        <li>snake_case (ctrl + shift + alt + C -> S [snake]),</li>
+        <li>SNAKE_CASE_CAPS (ctrl + shift + alt + C -> A [all caps snake]).</li>
+    </ul>
     ]]></description>
 
     <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
